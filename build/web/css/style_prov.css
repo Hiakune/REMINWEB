@@ -1,0 +1,220 @@
+:root {
+    --prueba: rgb(122, 122, 122);
+    --gris: rgb(122, 122, 122);
+    --celeste: rgb(107, 188, 235);
+    --amarillo: rgb(245, 248, 53);
+    --amarllClaro: rgb(254, 255, 177);
+    --amarllOscuro: rgb(223, 226, 44);
+    --menu: rgb(253, 185, 57);
+    --azulTransp: rgba(0, 0, 206, 0.719);
+    --moradoClarTransp: rgba(129, 20, 151, 0.726);
+    --blanco: rgb(255, 255, 255);
+    --blancoTransp: rgba(255, 255, 255, 0.527);
+    --verde: rgb(86, 230, 86);
+    --verdeTransp: rgba(157, 221, 96, 0.89);
+    --verdClarTransp: rgba(156, 221, 96, 0.726);
+    --verdFosf: rgb(34, 255, 89);
+    --verdFosfOscuro: rgb(32, 235, 83);;
+    --negro: rgb(0,0,0);
+    --negroTransp: rgba(0, 0, 0, 0.616);
+    --moradoOscuro: rgba(64, 10, 87, 0.938);
+    --azulOscuro: rgb(7, 7, 114);
+    --rojo: rgb(255, 44, 29);
+    --rojoOscuro:  rgb(209, 36, 24);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Varela Round', sans-serif;
+}
+
+body {
+    margin: 0%;
+    background-color: var(--blanco);
+}
+
+header.contenedor{
+    background-color: var(--verdClarTransp);
+    height: 5rem;
+}
+
+header.contenedor div img{
+    height: 5rem;
+    width: 5rem;
+    float: left;
+    border-radius: 5rem;
+}
+
+header nav.flex-cont{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 5rem;
+}
+
+header nav.flex-cont a{
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 5rem;
+}
+header nav.flex-cont button{
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+}
+header nav.flex-cont svg{
+    padding: 0.3rem 1rem;
+}
+
+header nav.flex-cont svg:hover{
+    background-color: var(--moradoOscuro);
+    stroke: var(--blanco);
+}
+
+header div.logout{
+    display: inline-flex;
+}
+
+/*--------------- ESTILOS DE "Footer" ------------------*/
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    background-color: var(--blanco);
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0rem;
+    padding: 1rem;
+}
+
+/*--------------- ESTILOS DE REPETITIVOS ------------------*/
+
+section h1{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+/*--------------- ESTILOS DE "Mis Proveedores" ------------------*/
+
+section div.proveedores{
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 10rem;
+    padding: 2rem 0rem;
+    align-items: center;
+}
+
+section div.proveedores a{
+    text-decoration: none;
+    color: var(--negro);
+}
+
+section div.proveedores div.agreg-prov{
+    display: flex;
+    background-color: rgb(254, 255, 177);;
+    width: 80rem;
+    height: 7rem;
+    border-radius: 4rem;
+    border-style: solid;
+    border-width: 0.3rem;
+    margin: 2rem 0rem 4rem 0rem;
+}
+
+section div.proveedores div.agreg-prov div img{
+    height: 7rem;
+}
+
+section div.proveedores div.agreg-prov div p{
+    font-size: 2rem;
+    padding: 0rem 2rem;
+    margin: 2.34rem 0rem;
+}
+
+section div.proveedores div.agreg-prov:hover{
+    background-color: rgb(251, 253, 104);
+    font-weight: 500;
+}
+
+section div.proveedores div.prov-exampl1,
+section div.proveedores div.prov-exampl2{
+    display: flex;
+    width: 80rem;
+    height: 10rem;
+    border-radius: 6rem;
+    border-style: dashed;
+    border-width: 0.25rem;
+    margin: 1rem 0rem;
+}
+
+section div.proveedores div.prov-exampl1{
+    background-color: rgb(112, 255, 196);
+}
+
+section div.proveedores div.prov-exampl2{
+    background-color: rgb(109, 136, 255);
+}
+
+section div.proveedores div.prov-exampl1 div img,
+section div.proveedores div.prov-exampl2 div img{
+    height: 8rem;
+    padding: 1rem 3rem;
+}
+
+div.nom,
+div.cant-serv{
+    width: 30rem;
+    padding: 0.5rem 0rem;
+}
+
+p.dato{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+p.dato-info{
+    font-size: 1.75rem;
+}
+
+section div.proveedores div div.del{
+    width: 4rem;
+}
+
+section div.proveedores div div.del img{
+    height: 3rem;
+    padding: 3.5rem 0.5rem;
+}
+
+/*--------------- ESTILOS DE "Nuevo Proveedor" ------------------*/
+
+section.new-prov div.return{
+    margin: 2rem 1rem;
+}
+
+section.new-prov div.return a{
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--azulOscuro);
+    background-color: var(--amarillo);
+    border-radius: 5rem;
+    font-weight: bold;
+}
+
+section.new-prov div.return a:hover{
+    color: var(--rojo);
+}
+
+section.new-prov div.cont-opcn{
+    display: flex;
+    background-color: var(--gris);
+    width: 20rem;
+    height: 20rem;
+}

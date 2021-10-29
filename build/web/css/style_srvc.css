@@ -1,0 +1,319 @@
+:root {
+    --prueba: rgb(254, 255, 177);
+    --celeste: rgb(107, 188, 235);
+    --amarillo: rgb(245, 248, 53);
+    --amarllClaro: rgb(254, 255, 177);
+    --amarllOscuro: rgb(223, 226, 44);
+    --menu: rgb(253, 185, 57);
+    --azulTransp: rgba(0, 0, 206, 0.719);
+    --moradoClarTransp: rgba(129, 20, 151, 0.726);
+    --blanco: rgb(255, 255, 255);
+    --blancoTransp: rgba(255, 255, 255, 0.527);
+    --verde: rgb(86, 230, 86);
+    --verdeTransp: rgba(157, 221, 96, 0.89);
+    --verdClarTransp: rgba(156, 221, 96, 0.726);
+    --verdFosf: rgb(34, 255, 89);
+    --verdFosfOscuro: rgb(32, 235, 83);;
+    --negro: rgb(0,0,0);
+    --negroTransp: rgba(0, 0, 0, 0.616);
+    --moradoOscuro: rgba(64, 10, 87, 0.938);
+    --azulOscuro: rgb(7, 7, 114);
+    --rojo: rgb(255, 44, 29);
+    --rojoOscuro:  rgb(209, 36, 24);
+}
+
+html {
+    font-size: 62.5%; /*REM*/
+    font-family: 'Varela Round', sans-serif;
+}
+
+body {
+    margin: 0%; /*REM*/
+    background-color: var(--blanco);
+}
+
+header.contenedor{
+    background-color: var(--verdClarTransp);
+    height: 5rem;
+}
+
+header.contenedor div img{
+    height: 5rem;
+    width: 5rem;
+    float: left;
+    border-radius: 5rem;
+}
+
+header nav.flex-cont{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 5rem;
+}
+
+header nav.flex-cont a{
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 5rem;
+}
+
+header nav.flex-cont svg{
+    padding: 0.3rem 1rem;
+}
+
+header nav.flex-cont svg:hover{
+    background-color: var(--moradoOscuro);
+    stroke: var(--blanco);
+}
+
+header div.logout{
+    display: inline-flex;
+}
+
+/*--------------- ESTILOS DE "Footer" ------------------*/
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    background-color: var(--blanco);
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0rem;
+    padding: 1rem;
+}
+
+/*--------------- ESTILOS DE REPETITIVOS ------------------*/
+
+section h1{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+/*--------------- ESTILOS DE "Configuración" ------------------*/
+
+
+
+section div.config-flex{
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+
+section div.config-flex div.recuadro{
+    width: 50rem;
+    height: 50rem;
+    background-color: var(--celeste);
+    text-align: center; 
+}
+
+section div.config-flex div h2{
+    margin: 2rem 0rem;
+    font-size: 2.5rem;    
+}
+
+/*--------------- ESTILOS DE "Reportes" ------------------*/
+
+section div.report-flex{
+    display: flex;
+    justify-content: center;
+    padding: 0rem 5rem;
+    height: 60rem;
+}
+
+section div.report-flex a.rcdr-estad,
+section div.report-flex a.rcdr-pagcerc,
+section div.report-flex a.rcdr-pagpend{
+    text-decoration: none;
+    color: var(--negro);
+}
+
+section div.report-flex a.rcdr-estad{
+    width: 35rem;
+    height: 60rem;
+    background-color: var(--verdFosf);
+    text-align: center; 
+    margin: 0rem 2.5rem;
+}
+
+section div.report-flex a.rcdr-pagcerc{
+    width: 35rem;
+    height: 60rem;
+    background-color: var(--amarillo);
+    text-align: center;
+    margin: 0rem 2.5rem;
+}
+
+section div.report-flex a.rcdr-pagpend{
+    width: 35rem;
+    height: 60rem;
+    background-color: var(--rojo);
+    text-align: center; 
+    margin: 0rem 2.5rem;
+}
+
+section div.report-flex a.rcdr-estad h2,
+section div.report-flex a.rcdr-pagcerc h2,
+section div.report-flex a.rcdr-pagpend h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 4rem 5rem;
+}
+
+section div.report-flex a.rcdr-estad img,
+section div.report-flex a.rcdr-pagcerc img,
+section div.report-flex a.rcdr-pagpend img{
+    height: 25rem;
+    width: 25rem;
+    padding: 5rem 0rem;
+}
+
+section div.report-flex a.rcdr-estad:hover{
+    background-color: var(--verdFosfOscuro);
+    color: var(--blanco);
+}
+
+section div.report-flex a.rcdr-pagcerc:hover{
+    background-color: var(--amarllOscuro);
+    color: var(--blanco);
+}
+
+section div.report-flex a.rcdr-pagpend:hover{
+    background-color: var(--rojoOscuro);
+    color: var(--blanco);
+}
+
+/*--------------- ESTILOS DE "Ayuda" ------------------*/
+
+section.cont-ayuda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 3rem;
+}
+
+section.cont-ayuda div.docs{
+    display: flex;
+    justify-content: center;
+    width: 80rem;
+}
+
+section.cont-ayuda div.docs div.manual{    
+    width: 30rem;
+    padding: 0rem 3rem;
+    margin: 1rem 1rem;
+    background-color: var(--celeste);
+}
+
+section.cont-ayuda div.docs div.document{   
+    width: 30rem; 
+    padding: 0rem 3rem;
+    margin: 1rem 1rem;
+    background-color: var(--verdFosf);
+}
+
+section.cont-ayuda div.foro h2,
+section.cont-ayuda div.docs div.manual h2,
+section.cont-ayuda div.docs div.document h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+section.cont-ayuda div.docs div.manual p,
+section.cont-ayuda div.docs div.document p{
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+section.cont-ayuda div.foro{
+    display: flex;
+    flex-direction: column;
+    width: 75rem;
+}
+
+section.cont-ayuda div.foro form{
+    padding: 1rem 1rem;
+    background-color: var(--amarllClaro);
+}
+
+section.cont-ayuda div.foro form fieldset{
+    border: none;
+}
+
+section.cont-ayuda div.foro form fieldset div.asunto,
+section.cont-ayuda div.foro form fieldset div.descrip{
+    display: flex;
+    padding: 0.5rem 0rem;
+}
+
+section.cont-ayuda div.foro form fieldset div label{
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    width: 10rem;
+}
+
+section.cont-ayuda div.foro form fieldset div.asunto input.inpt-asunto{
+    width: 60rem;
+}
+
+section.cont-ayuda div.foro form fieldset div.descrip textarea{
+    resize: none;
+    width: 60rem;
+    height: 10rem;
+}
+
+section.cont-ayuda div.foro form fieldset div.enviar input{
+    background-color: var(--verdClarTransp);
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    padding: 0.5rem 2rem;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+section.cont-ayuda div.foro form fieldset div.enviar input:hover{
+    background-color: var(--verdFosfOscuro);
+}
+
+section.cont-ayuda div.foro div.preg-foro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 2rem 5rem 2rem;
+}
+
+section.cont-ayuda div.foro div.preg-foro div.example{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0rem;
+}
+
+section.cont-ayuda div.foro div.preg-foro div.example div img{
+    height: 6rem;
+    width: 6rem;
+}
+
+section.cont-ayuda div.foro div.preg-foro div.preg{
+    word-wrap: break-word;
+    padding: 0rem 2rem;
+    width: 60rem;
+}
+
+section.cont-ayuda div.foro div.preg-foro div.preg p.preg-asunt{
+    font-size: 1.75rem;
+    margin: 0rem;
+}
+
+section.cont-ayuda div.foro div.preg-foro div.preg p.preg-descr{
+    font-size: 1.25rem;
+    margin-top: 0.75rem;
+}
+
